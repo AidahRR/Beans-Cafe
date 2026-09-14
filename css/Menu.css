@@ -1,0 +1,227 @@
+.our-menu h1 {
+    color: var(--LightBrown);
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--LightBrown);
+    text-underline-offset: 7px;
+}
+.our-menu {
+    background-image:
+        linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+        url(../images/menu-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+}
+h2 {
+    font-family: cinzel, sans-serif;
+    color: var(--DarkBrown);
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+h1 {
+    font-family: cinzel, sans-serif;
+    color: var(--DarkBrown);
+    font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-thickness: 1.4px;
+    text-underline-offset: 7px;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu-card h2 {
+    margin-top: 50px;
+}
+.menu-card {
+    text-align: center;
+    flex: 1;
+}
+.menu-card h2{
+    position: relative;
+    display: inline-block;
+}
+.menu-card h2::after {
+    content: "";
+    position: absolute;
+    left: -12px;
+    right: -12px;
+    bottom: 4px;
+    height: 0.7px;
+    background-color: var(--Brown);
+}
+.menu-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.item-info-1, .item-info-2, .item-info-3, .item-info-4 {
+    border: 1.5px solid var(--DarkBrown);
+    border-radius: 10px;
+    padding: 15px;
+    width: 280px;
+    height: 250px;
+    overflow: hidden;
+}
+.menu-card ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 20px;
+}
+.menu-card li > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 5px 10px rgba(48, 32, 7, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.menu-card li > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 9px 15px rgba(0, 0, 0, 0.25);
+}
+.menu-card li {
+    flex: 1;
+}
+.menu-card li > div {
+    height: 190px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1.5px solid var(--DarkBrown);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.item-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    font-size: 18px;
+}
+.item-info-1, .item-info-2, .item-info-3, .item-info-4, .item-info-5 {
+     background: linear-gradient(to bottom right, var(--Brown), var(--AccentGold));
+}
+.allergen-info h2 {
+    text-align: center;
+    text-underline-offset: 2px;
+    text-decoration: underline;
+    text-decoration-thickness: 0.7px;
+    text-decoration-color: var(--Brown);
+}
+.allergen-info {
+    font-size: large;
+    text-align: center;
+}
+.allergen-select {
+    text-align: center;
+}
+.bigger-menu-item {
+    background: linear-gradient(to bottom right, var(--Brown), var(--AccentGold));
+    border: 2px solid var(--DarkBrown);
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+.bigger-menu-item img {
+    width: 225px;
+    height: 300px;
+}
+.Reservations-incentive {
+    text-align: center;
+}
+.Reservations-incentive a {
+    text-decoration: none;
+    color: var(--AccentRed);
+    padding: 12px 35px;
+    border-radius: 100px;
+    background-color: var(--Tan);
+    transition: 0.25s, transform 0.25s;
+    border: 2px solid var(--AccentRed);
+    display: inline-block;
+}
+.section-description {
+    margin-top: -15px;
+    margin-bottom: 35px;
+    font-size: 1.1rem;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+.menu-container {
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 20px 50px;
+    border: 1px solid var(--AccentRed);
+}
+nav h2 {
+    font-size: 1.5rem;
+    font-family: 'Cinzel', sans-serif;
+}
+/* Special Offers */
+.special-offers .menu-row {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 0 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.special-offers .menu-item {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+/* Keep the offer images large */
+.special-offers .menu-item img {
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+}
+
+
+/* Breakfast Deal */
+.special-offers .bottom-section {
+    display: flex;
+    justify-content: center;
+}
+
+.special-offers .bigger-menu-item {
+    width: 600px;
+    box-sizing: border-box;
+}
+
+.special-offers .bigger-menu-item img {
+    width: 225px;
+    height: 300px;
+    object-fit: contain;
+}
+.special-offers .menu-item,
+.special-offers .bigger-menu-item {
+    border-radius: 10px;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.bottom-section {
+    margin-top: 35px;
+}
+.Reservations-incentive {
+    margin-top: 25px;
+}
+.Reservations-incentive h2, .allergen-info h2 {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+}
+.Reservations-incentive a {
+    text-decoration: none;
+    color: var(--DarkBrown);
+    transition: 0.25s;
+}
+.Reservations-incentive a:hover {
+    color: var(--AccentGold);
+    transform:scale(1.09);
+}
