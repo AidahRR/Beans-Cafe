@@ -90,23 +90,139 @@ h1{
     color: var(--AccentGold);
     transform: scale(1.09);
 }
-.Story-section {
+.About-us h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+.Slideshow {
+    border-radius: 40px;
+    overflow: hidden;
+}
+.Story-background {
+
     background-image:
-        linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+        linear-gradient(
+            to bottom right,
+            color-mix(in srgb, var(--AccentRed), transparent 40%),
+            rgba(0, 0, 0, 0.7)
+        ),
         url(/images/Story-section-bg.jfif);
+
     background-size: cover;
     background-position: center;
-    padding: 100px 0;
+    padding: 100px;
+    box-sizing: border-box;
+
+}
+.Mission-background {
+
+    background-image:
+        linear-gradient(
+            to bottom right,
+            color-mix(in srgb, var(--Brown), transparent 2%),
+            rgba(0, 0, 0, 0.4)
+        ),
+        url(/images/Mission-section-bg.jfif);
+
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    box-sizing: border-box;
+
+}
+.Values-background {
+    
+    background-image:
+        linear-gradient(
+            to bottom right,
+            color-mix(in srgb, var(--Orange), transparent 45%),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url(/images/Values-section-bg.jpg);
+
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    box-sizing: border-box;
+
+}
+
+.Team-background {
+    
+    background-image:
+        linear-gradient(
+            to bottom right,
+            color-mix(in srgb, var(--AccentRed), transparent 60%),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url(/images/Team-section-bg.jpg);
+
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    box-sizing: border-box;
+
+}
+.Story-section, .Mission-section, .Values-section, .Team-section{
+    width: 55%;
+    padding: 25px;
+    text-align: left;
 }
 .Story-section h3,
-.Story-section p {
-    color: var(--LightBrown);
+.Story-section p, 
+.Mission-section h3,
+.Mission-section p,
+.Values-section h3,
+.Values-section p,
+.Team-section h3,
+.Team-section p {
+    color: var(--Tan);
 }
-
-
-
-
-
+.Story-section p,
+.Mission-section p,
+.Values-section p,
+.Team-section p {
+    font-size: 1.2rem
+}
+.Slideshow {
+    width: 82%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.Slideshow-track {
+    display: flex;
+    transition: transform 0.7s ease;
+}
+.Slideshow-track > section {
+    flex: 0 0 100%;
+}
+.Back-button,
+.Forward-button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--AccentGold);
+    color: var(--Brown);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 35%;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.25s ease;
+}
+.Back-button {
+    left: 25px;
+}
+.Forward-button {
+    right: 25px;
+}
+.Back-button:hover,
+.Forward-button:hover {
+    background-color: var(--LightBrown);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.50);
+}
 
 
 
