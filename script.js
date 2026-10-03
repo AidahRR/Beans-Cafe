@@ -18,7 +18,7 @@ if(Automaticsliding === true)
     }
 
     track.style.transform = `translateX(-${currentSection * 100}%)`;
-}, 5000);
+}, 2000);
 
 
 const Backbutton = document.querySelector(".Back-button");

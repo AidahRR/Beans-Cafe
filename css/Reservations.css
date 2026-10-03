@@ -1,0 +1,62 @@
+h1 {
+    font-family: cinzel, sans-serif;
+    color: var(--DarkBrown);
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-thickness: 1.4px;
+    text-underline-offset: 7px;
+    text-align: center;
+}
+
+.Form-1, .Form-2, .Form-3 {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.Reservations-form, .guests-form, .requests-form {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+input {
+    padding: 12px;
+    border-radius: 15px;
+    border: 1.5px solid var(--DarkBrown);
+    width: 300px;
+}
+textarea {
+    padding: 12px;
+    border-radius: 15px;
+    border: 1.5px solid var(--DarkBrown);
+    width: 800px;
+    height: 80px;
+    resize: none;
+}
+input::placeholder {
+    color: var(--DarkBrown);
+    opacity: 0.67;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--AccentGold);
+    box-shadow: 0 3px 15px var(--Charcoal);
+}
+button {
+    background-color: var(--Tan);
+    color: var(--DarkBrown);
+    border: none;
+    border-radius: 55px;
+    padding: 20px 35px;
+    font-size: 1.01rem;
+    cursor: pointer;
+    transition: 0.4s, transform 0.4s;
+}
+button:hover {
+    background-color: var(--Tan);
+    color: var(--AccentGold);
+    transform: scale(1.03);
+    box-shadow: 0 3px 15px var(--Charcoal);
+}
