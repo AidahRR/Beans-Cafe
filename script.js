@@ -1,3 +1,4 @@
+console.log("Script loaded successfully");
 const sections = document.querySelectorAll(
     ".Story-background, .Mission-background, .Values-background, .Team-background"
 );
@@ -7,46 +8,71 @@ let Automaticsliding = true;
 
 const track = document.querySelector(".Slideshow-track");
 
-setInterval(() => {
 
-if(Automaticsliding === true)
+if (track) {
 
-    currentSection++;
 
-    if (currentSection >= sections.length) {
-        currentSection = 0;
+    setInterval(() => {
+
+    if(Automaticsliding === true) {
+
+        currentSection++;
+
+        if (currentSection >= sections.length) {
+            currentSection = 0;
+        }
+
+        track.style.transform = `translateX(-${currentSection * 100}%)`;
     }
+    }, 2000);
 
-    track.style.transform = `translateX(-${currentSection * 100}%)`;
-}, 2000);
+    const Backbutton = document.querySelector(".Back-button");
+    const Forwardbutton = document.querySelector(".Forward-button");
 
+    Forwardbutton.addEventListener("click", () => {
+        Automaticsliding = false;
 
-const Backbutton = document.querySelector(".Back-button");
-const Forwardbutton = document.querySelector(".Forward-button");
+        currentSection++;
 
-Forwardbutton.addEventListener("click", () => {
-    Automaticsliding = false;
+        if (currentSection >= sections.length) {
+            currentSection = 0;
+        }   
 
-    currentSection++;
-
-    if (currentSection >= sections.length) {
-        currentSection = 0;
-    }
-
-    track.style.transform = `translateX = (${currentSection * 100}%)`;
-});
+        track.style.transform = `translateX(${currentSection * 100}%)`;
+    });
 Backbutton.addEventListener("click", () => {
     Automaticsliding = false;
 
     currentSection--;
 
-    if (currentSection >= sections.length) {
-        currentSection = 0;
+    if (currentSection === -1) {
+        currentSection = sections.length - 1;
     }
 
     track.style.transform = `translateX(-${currentSection * 100}%)`;
+});
+}
+const animatedElements = document.querySelectorAll(
+    ".Forename-form, .Surname-form, .Email-form, .Phone-form, .Date-form, .time-form, .requests-form, .guests-form"
+);
 
-    if (currentSection === -1) {
-         currentSection = 3;
-    }
+console.log("Elements found:", animatedElements.length);
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(
+            "Observed element:",
+            entry.target.className,
+            "Visible:",
+            entry.isIntersecting
+        );
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+animatedElements.forEach((element) => {
+    observer.observe(element);
 });

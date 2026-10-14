@@ -12,7 +12,7 @@ h1 {
     display: flex;
     gap: 60px;
     justify-content: space-between;
-    width: 60%;
+    width: 70%;
 }
 
 .Reservations-form, .guests-form, .requests-form {
@@ -25,7 +25,8 @@ input {
     padding: 12px;
     border-radius: 15px;
     border: 1.5px solid var(--DarkBrown);
-    width: 300px;
+    width: 350px;
+    height: 27px;
 }
 textarea {
     padding: 12px;
@@ -47,7 +48,7 @@ input:focus, textarea:focus {
 button {
     background-color: var(--Tan);
     color: var(--DarkBrown);
-    border: none;
+    border: 1.5px solid var(--DarkBrown);
     border-radius: 55px;
     padding: 20px 35px;
     font-size: 1.01rem;
@@ -59,4 +60,23 @@ button:hover {
     color: var(--AccentGold);
     transform: scale(1.03);
     box-shadow: 0 3px 15px var(--Charcoal);
+}
+.Forename-form, .Email-form, .Date-form {
+    transform: translate(-175px);
+    opacity: 0.2;
+    transition: transform 0.8s, opacity 0.8s;
+}
+.Surname-form, .Phone-form, .time-form {
+    transform: translate(175px);
+    opacity: 0.2;
+    transition: transform 0.8s, opacity 0.8s;
+}
+.requests-form, .guests-form {
+    transform: translateY(100px);
+    opacity: 0.2;
+    transition: transform 0.8s, opacity 0.8s;
+}
+.show {
+    transform: translate(0);
+    opacity: 1;
 }

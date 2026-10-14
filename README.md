@@ -23,7 +23,7 @@ developing my skills in HTML, CSS and JavaScript.
 - Menu page
 - Reservations page
 - Gallery
-- [Add other features as they are completed]
+- potentially more features coming soon!
 
 ## Design
 

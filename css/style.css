@@ -78,7 +78,7 @@ h1{
     border-radius: 100px;
     background-color: var(--Tan);
     transition: 0.25s, transform 0.25s;
-    border: 2px solid var(--AccentRed);
+    border: 1.5px solid var(--AccentRed);
     display: inline-block;
 }
 .hero-buttons {
@@ -87,8 +87,10 @@ h1{
     align-self: center;
 }
 .hero-buttons a:hover {
+    background-color: var(--Tan);
     color: var(--AccentGold);
-    transform: scale(1.09);
+    transform: scale(1.03);
+    box-shadow: 0 3px 15px var(--Charcoal);
 }
 .About-us h1 {
     text-align: center;

@@ -141,7 +141,7 @@ ul {
     border-radius: 100px;
     background-color: var(--Tan);
     transition: 0.25s, transform 0.25s;
-    border: 2px solid var(--AccentRed);
+    border: 1.5px solid var(--AccentRed);
     display: inline-block;
 }
 .section-description {
@@ -219,9 +219,11 @@ nav h2 {
 .Reservations-incentive a {
     text-decoration: none;
     color: var(--DarkBrown);
-    transition: 0.25s;
+    transition: 0.4s;
 }
 .Reservations-incentive a:hover {
+    background-color: var(--Tan);
     color: var(--AccentGold);
-    transform:scale(1.09);
+    transform: scale(1.03);
+    box-shadow: 0 3px 15px var(--Charcoal);
 }
